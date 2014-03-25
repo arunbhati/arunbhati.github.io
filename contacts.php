@@ -103,27 +103,49 @@
 		</address>
 		</div>
 		
-			<?php
-		// display form if user has not clicked submit
-		echo "Hello world!<br>";
-		?>	
-		  <h2>Feedback Form</h2>
-		<div class="col-sm-8 contact-form">
-		<form id="contact" method="post" class="form" role="form">
-		<div class="row">
-		<div class="col-xs-6 col-md-6 form-group">
-		<input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
-		</div>
-		<div class="col-xs-6 col-md-6 form-group">
-		<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
-		</div>
-		</div>
-		<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-		<br />
-		<div class="row">
-		<div class="col-xs-12 col-md-12 form-group">
-		<button class="btn btn-primary pull-right" type="submit">Submit</button>
-		</form>
+        <?php
+        
+		if (!isset($_POST["submit"]))
+          {
+          ?>
+            	<h2>Feedback Form</h2>
+		        <div class="col-sm-8 contact-form">
+		        <form id="contact" method="post" class="form" role="form" action="<?php echo $_SERVER["PHP_SELF"];?>">
+		        <div class="row">
+		        <div class="col-xs-6 col-md-6 form-group">
+		        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+		        </div>
+		        <div class="col-xs-6 col-md-6 form-group">
+		        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+		        </div>
+		        </div>
+		        <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+		        <br />
+		        <div class="row">
+		        <div class="col-xs-12 col-md-12 form-group">
+		        <button class="btn btn-primary pull-right" type="submit">Submit</button>
+		        </form>
+          <?php 
+          }
+        else
+          // the user has submitted the form
+          echo "submitted form!!" ;  
+          if (isset($_POST["name"]))
+          {
+            mail("arnbhati@gmail.com","it works","hi ");            
+          // Check if the "from" input field is filled out
+            $from = $_POST["name"]; // sender
+            $subject = $_POST["subject"];
+            $message = $_POST["message"];
+            // message lines should not exceed 70 characters (PHP rule), so wrap it
+            $message = wordwrap($message, 70);
+            // send mail
+            mail("arnbhati@gmail.com",$subject,$message);
+            echo "Thank you for sending us feedback";
+          }
+          
+        ?>		
+	
 		 
 		
 		</div>
