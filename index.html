@@ -1,111 +1,412 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-   
-
-    <title>Blog Arun Bhati</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="bootstrap-3.1.1/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <style>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Arun Bhati</title>
     
-    body {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        background-color:#E1E1E1 ;
-      }
+    <meta name="description" content="Resume Template">
+    <meta name="author" content="kaylog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    .jumbotron {
-
-        margin-bottom: 0px;
-        padding-top: 0px;
-        height: 700px;
-        color:black;
-        background:#FFFFFF;
-    }
-
-     .container-fluid{
-        color:black;
-        background:#FFFFFF;
-    }
-
-      .pic{
-        margin-bottom: 0px;
-    }
-
-  </style>
-
-
-  </head>
-
-  <body role="document" >
-
+    <!-- CSS -->
+    <link href="my_data/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="my_data/bootstrap-responsive.css" rel="stylesheet" media="screen"> 
+    <link href="my_data/style.css" rel="stylesheet">
+    
+	<!-- Javascript not available -->   
+    <noscript>
+    	<link href="css/noscript.css" rel="stylesheet">
+    </noscript>
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+   <!-- To select the black text uncomment the following line -->
    
+   <!-- <link href="css/dark.css" rel="stylesheet"> -->
+   
+   
+   <!-- To change the color of hover effects and links to green, you can uncomment the following line -->
+    
+   <!-- <link href="css/green.css" rel="stylesheet"> -->
+   
+   
+   <!-- To change the color of hover effects and links to orange, you can uncomment the following line -->
+    
+  <!--  <link href="css/orange.css" rel="stylesheet"> -->
+    
+   <link href="my_data/css.css" rel="stylesheet" type="text/css">
+   <style>
+    	.oc{ position:fixed; top:73px; height:30px; width:30px;  background-color:#CCC; margin-left:17px; z-index:100}
+		.oc span{height:27px; width:30px; font-size:24px; text-align:center; padding-top:3px; cursor:pointer }
+		.oc .open{ display: none}
+		.oc .close{ display:block}
+		.panel-picker{ position:fixed; top:102px; display:block; z-index:100}
+		.panel-picker li { list-style:none; padding:9px 10px 15px; color:#fff; cursor:pointer; font-size:13px}
+		.panel-picker li li{ height:40px; width:40px; padding:0px}
+		.panel-picker li.brown{ background-color:#444}
+		.panel-picker li.black{ background-color:#000}
+		.panel-picker li.green{ background-color:#46ca7b}
+		.panel-picker li.orange{ background-color:#df6c4f}
+		.panel-picker li.blue{ background-color:#08c}
+		@media (max-width: 480px) {  
+			.oc, .panel-picker{ display:none}
+		}
+        .skillblock{
+            background-color: #08C ;
+        }
+    </style>
 
-   <div class="container theme-showcase" role="main"  style="width:1100px;background-color=white;padding-top: 0px;">
-     
-        <!-- Static navbar -->
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        
-        
-        <h1 ><font size="5">Arun Bhati</h1>
-        <p> <font size="3"> 3rd year </br> Computer Science and Engineering Student </br> IIT Guwahati 781039</p>
-       
-      <div class="navbar navbar-default" role="navigation" style="margin-top: 50px;">
-        <div class="container-fluid" >
-          <div class="navbar-header" >
-           
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+</head>
 
-           <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html" >Blog</a></link>
-              
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="Arun Bhati IIT Guwahati.pdf">CV</a></li>
-              <li><a href="About Me.html">About Me</a></li>
-              <li><a href="contact.html" >Contact</a></li> 
-            </ul>
-
-          
-          </div>
-          
-
-
-        </div><!--/.container-fluid -->
-      </div>
-		
-              <img src="images/Website_Page_Under_Construction.jpg" style="max-height:300px  " alt="page is under construction.">
-	  
-	       </div>		
-		
-		        
-      </div>
-
-  </div> <!-- /container -->
-
+<body>
 	
+   
+	<a name="top"></a>
+    
+    <!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Navigation and displaying text when the screen is scrolled 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+            <div class="container">
+            	<!-- This will display when the page is viewed on a mobile device -->
+                <button type="button" class="btn btn-navbar" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>                
+              	<a style="left: -173px; opacity: 0;" class="brand me-name" href="#top">Arun Bhati</a><!-- This text displays when the screen has been scrolled -->                
+                <div class="nav-collapse collapse pull-right navigation">
+                    <ul class="nav">
+                      <li class="active first"><a href="#experience">Work Experience</a></li>
+                      <li><a href="#portfolio">Project</a></li>
+                      <li><a href="#education">Education</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                       <li><a href="my_data/ArunBhati.pdf">CV</a></li>
+                      <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div><!-- nav-collapse -->                
+            </div><!-- container -->
+		</div><!-- navbar-inner -->
+    </div><!-- navbar -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-3.1.1/assets/js/docs.min.js"></script>
-  </body>
-</html>
+	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Hero information, where it displays profile picture and personal information
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+	<div class="hero">
+		<div class="container">
+			<div class="hero-unit me-details">
+				<div class="jumbotron row-fluid">
+                    <img src="my_data/person.png" class="img-thumbnail pull-right" width="130px">
+                    <h1>Arun Bhati</h1>
+                    <p>
+                        Final Year, Department of Computer Science & Engineering </br><strong> Indian Institute of    Technology Guwahati </strong>
+                    </p>
+                </div><!-- row-fluid -->
+			</div> <!-- hero-unit -->
+		</div><!-- container -->
+	</div><!-- hero -->
+    
+    <div class="container">
+ 
+ 	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Work experience
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->     
+      	<section>
+			<div class="row">
+
+                <div class="span">
+                    <a name="experience" class="division"></a><h2>Work experience</h2>
+                </div>
+
+                <div class="span">    
+                    <h3><a href="http://www.amazon.in">Amazon India Pvt. Ltd.</a></h3>
+                    <h4>SDE Intern <small class="pull-right"><font size="3">May-July 2014</small></h4>
+                    <p>I did two month internship at <b>Amazon</b> india on project "<b>Beejak Self Service Tools</b>". I was part of <b>TAX</b> Team Hyderabad. I used Java Programming Language and RubyOnRails web developement framework. Following are the list of tasks i was working on.</p>
+                    <ul>
+                        <li>Implemented API and web interface to get information related to Invoice Metadata given Invoice Key as search key.</li>
+                        <li>Implemented pagination functionality for secondary keys inputs.</li>
+                        <li>Fetch information related to workflow states and show it on web interface.</li>
+                    </ul>      
+                </div>
+			</div><!-- row --> 
+        </section>
+		<hr>
+ 
+  	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Projects
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->       
+		<section>
+			<div class="row">
+                <div class="span">
+                    <a name="portfolio" class="division"></a><h2>Projects</h2>
+                </div>               
+
+                <div class="span">
+                    <h3><a href="https://github.com/arunbhati/Information-Retrieval">Web Search Engine</a></h3>
+                    <h4>Dr. S. R. Singh, IIT Guwahati <small class="pull-right">    <font size="3">August 2014</small></h4>
+                    <p>Developed text document retrieval engine by exploiting TF, TFIDF and BM25 term weighting measures to retrieve the relevant documents. This has been implemented using Python language.</p>  
+                </div>
+
+                <div class="span">
+                    <h3><a href="https://github.com/arunbhati/Sp.RDBMS">Relational database management system</a></h3>
+                    <h4>Dr. S. R. Singh, IIT Guwahati <small class="pull-right">    <font size="3">March-April 2014</small></h4>
+                    <p>Developed a relational database management system which supports subset of SQL queries such as Insert, Update, Delete, Select and Show operations with nested conditional queries. It also supports indexing, primary key and uniqueness constraints. This has been implemented using Java language.</p>  
+                </div>
+
+                 <div class="span">
+                    <h3><a href="https://github.com/arunbhati/MIPS-Assembly-Code-Generator">MIPS assembly code generator</a></h3>
+                    <h4>Dr. Arnab Sarkar, IIT Guwahati <small class="pull-right">    <font size="3">April 2014</small></h4>
+                    <p>Developed a compiler which converts a subset of C language into MIPS Instruction set. It was implemented using GNU-Yacc parser and GNU-Lex lexical analyzer and AST (Abstract Syntax Tree) for code conversion. This has been implemented using C++ language.</p>  
+                </div>
+
+                <div class="span">
+                    <h3><a href="https://github.com/arunbhati/tftp_protocol">FTP and TFTP Protocol</a></h3>
+                    <h4>Prof. S. K. Nandi, IIT Guwahati <small class="pull-right">    <font size="3">March-April 2014</small></h4>
+                    <p>Developed a software that can check a file for spelling mistakes. This has been built using left child right sibling data structure as a part of academic project. This has been implemented using C++ programming language.</p>  
+                </div>
+
+                <div class="span">
+                    <h3><a href="https://github.com/arunbhati/Sp.Checker">Spell Checker</a></h3>
+                    <h4>Dr. Saswata Shannigrahi, IIT Guwahati <small class="pull-right">    <font size="3">October 2012</small></h4>
+                    <p>Developed a software that can check a file for spelling mistakes. This has been built using left child right sibling data structure as a part of academic project. This has been implemented using C++ programming language.</p>  
+                </div>
+
+                <div class="span">
+                    <h3><a href="https://github.com/arunbhati/Digital-Bread-Board-Simluator">Digital breadboard Drawer</a></h3>
+                    <h4>Dr. Santosh Biswas CSE, IIT Guwahati <small class="pull-right">    <font size="3">October 2012</small></h4>
+                    <p>Java based software for drawing the ICs and wires on breadboard as a part of academic Project given in System Software Lab Course. Helped in GUI development. </p>  
+                </div>
+            </div><!-- row -->
+		</section>
+		<hr>
+
+  	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Education
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->           
+		<section>
+            <div class="row">
+                <div class="span">
+                    <a name="education" class="division"></a><h2>Education</h2>
+                </div>       
+                <small class="pull-right"> <font size="3"></small>         
+            </div><!-- row -->
+            <div class="row">
+                <div class="span">
+                   <h3><a href="http://www.iitg.ac.in/">Indian Institute of Technology Guwahati</a></h3>
+                   <h4>B.Tech, Computer Science and Engineering</h4>
+                </div>
+                <small class="pull-right"> <font size="3">7.73 / 10</small>               
+            </div><!-- row -->
+            <div class="row">
+                <div class="span">
+                   <h3><a href="#">Shri new BVB Sr. Sec. School</a></h3>
+                   <h4>Higher Secondary Education</h4>
+                </div>
+                <small class="pull-right"> <font size="3">88.31%</small>               
+            </div><!-- row -->
+            <div class="row">
+                <div class="span">
+                   <h3><a href="#">Shri R. C. LBN Sr. Sec. School</a></h3>
+                   <h4>Secondary Education</h4>
+                </div>
+                <small class="pull-right"> <font size="3">80.67%</small>               
+            </div><!-- row -->
+		</section>
+    	<hr>
+
+  	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Technical Skills
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->       
+        <section>
+            <div class="row">
+
+                <div class="span">
+                    <a name="skills" class="division"></a><h2>Skills</h2>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <div class="span">
+                    <h4><strong>Operating Systems </strong>
+                        <span class="pull-right">
+                            <span class="skillblock label label-primary">Windows</span> 
+                            <span class="skillblock label label-primary">Ubuntu</span>
+                        </span>
+                    </h4>
+                    
+                    <h4><strong>Programming Languages </strong>
+                        <span class="pull-right">
+                            <span  class="skillblock label label-primary">C</span>
+                            <span class="skillblock label label-primary">C++</span>
+                            <span  class="skillblock label label-primary">Java</span> 
+                            <span class="skillblock label label-primary">Python</span>
+                            <span  class="skillblock label label-primary">Visual Basic</span> 
+                            <span  class="skillblock label label-primary">C#</span>
+                        </span>
+                    </h4>
+
+                    <h4><strong>Web Technologies (Basic Level) </strong> 
+                        <span class="pull-right"> 
+                            <span class="skillblock label label-primary">Html</span> 
+                            <span class="skillblock label label-primary">Css</span>
+                            <span class="skillblock label label-primary">RubyOnRails</span> 
+                            <span class="skillblock label label-primary">JavaScript</span> 
+                            <span class="skillblock label label-primary">MySql</span>
+                        </span>
+                    </h4>
+
+                    <h4><strong>Programming Environment </strong>
+                        <!-- beautiful design :( !-->
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="pull-right"> 
+                            <span class="skillblock label label-primary">Microsoft Visual Studio</span>
+                            <span class="skillblock info label label-primary">CodeBlocks</span> 
+                        </span>
+                    </h4>
+                </div> 
+            </div><!-- row -->
+        </section>
+        
+        <hr>
+
+  	<!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Contact me
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->         
+        <section>
+            <div class="row">
+                <div class="span4"></div><!-- Keep this div empty to align -->
+                <div class="span8">
+                    <a name="contact" class="division"></a>
+                    <h2>Contact me</h2>
+                </div>
+                <div class="span4">
+                    <h3>Arun Bhati</h3>
+                </div>
+                <div class="span8">
+                    <div class="row contact">
+                        <div class="span4">
+                             <p>If you have any query related to my projects or anything else feel free to contact me.</p>
+                            <address>
+                                B2-206<br>
+                                Kameng Hostel, IIT Guwahati<br>
+                                <abbr title="Email">E:</abbr> <a href="mailto:arnbhati@gmail.com">arnbhati@gmail.com</a><br>
+                                <abbr title="Website">W:</abbr> <a href="http://www.arunbhati.github.io/">www.arunbhati.github.io</a><br>
+                            </address>
+                        </div><!-- span4 -->
+                        <div class="span4">
+                            <form class="form" id="ajax-contact-form" action="#">
+                                <input name="name" class="span4" placeholder="Name" required="" type="text">
+                                <input class="span4" name="email" placeholder="Email" required="" type="text">
+                                <textarea name="message" placeholder="Message" rows="8" class="span4"></textarea>
+                                <button type="submit" class="btn btn-submit bg-color">SUBMIT</button><div class="loading"></div>
+                            </form>
+                            <div class="results"></div>
+                        </div><!-- span4 -->
+                    </div><!-- contact -->
+                </div><!-- span8 -->
+            </div><!-- row -->
+             
+        </section>
+
+    </div> <!-- container -->
+    
+    <!-- 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ::::: Footer
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->    
+    <footer>
+    	<div class="container">
+        	<p>© Arun Bhati</p>
+        </div>
+     </footer>
+     <a style="display: none;" href="#top" class="go-to-top">Top</a>
+     
+    <!-- SCRIPTS -->
+    <script src="my_data/jquery_002.js"></script>
+	<script src="my_data/jquery.js"></script>    
+	<script src="my_data/bootstrap.js"></script>
+	<script src="my_data/scripts.js"></script>
+    <script>
+    	(function ( $ ){
+			$('.black').on('click', function(){
+				$('.txtChange').remove();
+				$('<link/>',{
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: 'css/dark.css',
+					class: 'txtChange'
+				}).appendTo('head');
+			});
+			
+			$('.brown').on('click', function(){
+				$('.txtChange').remove();
+			});
+			
+			$('.orange').on('click', function(){
+				$('.txtHover').remove();
+				$('<link/>',{
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: 'css/orange.css',
+					class: 'txtHover'
+				}).appendTo('head');
+			});
+			$('.green').on('click', function(){
+				$('.txtHover').remove();
+				$('<link />',{
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: 'css/green.css',
+					class: 'txtHover'
+				}).appendTo('head');
+			});
+			$('.blue').on('click', function(){
+				$('.txtHover').remove();
+				$('.txtChange').remove();
+			})
+			$('.open').on('click', function(){
+				$('.panel-picker').show();
+				$('.close').show();
+				$(this).hide();
+			})
+			$('.close').on('click', function(){
+				$('.panel-picker').hide();
+				$('.open').show().css({ 'display' : 'block'});
+				$(this).hide();
+			})
+			
+	})( jQuery );
+    </script>
+
+
+</body></html>
